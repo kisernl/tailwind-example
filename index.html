@@ -1,10 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <title>Hope</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <main>
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="bg-[url('/img/baby-bw-square.svg')] bg-cover bg-center h-dvh md:bg-[url('/img/baby-bw-hero.svg')]"
+      >
+        <!-- Navbar -->
+        <nav class="relative mx-auto px-6 bg-blueGreyDark" id="home">
+          <!-- Flex container -->
+          <div class="flex items-center justify-between max-w-7xl mx-auto">
+            <!-- Logo -->
+            <div class="pt-2">
+              <a href="#home">
+                <img
+                  class="max-h-[100px] m-0"
+                  src="img/whmc_ha_combined_logo_900x250.svg"
+                  alt="WHMC logo"
+                />
+              </a>
+            </div>
+            <!-- Menu Items -->
+            <div class="flex justify-between items-center space-x-5 ml-7">
+              <div
+                class="hidden md:flex space-x-10 text-blueGreyWhite align-middle"
+              >
+                <a href="#" class="hover:text-liteBlue">Updates</a>
+                <a href="#" class="hover:text-liteBlue">Volunteer</a>
+                <a href="#" class="hover:text-liteBlue">Walk+5k</a>
+              </div>
+              <!-- Button -->
+              <div>
+                <a
+                  href=""
+                  class="hidden md:block p-3 px-6 pt-2 mx-9 text-blueGreyDark font-semibold bg-white rounded-full baseline hover:bg-liteBlue"
+                  >Donate</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="md:max-w-7xl md:m-auto md:mt-20">
+          <!-- Flex container -->
+          <div
+            class="container flex flex-col-reverse w-fit m-5 p-5 justify-around bg-white bg-opacity-70 md:max-w-lg md:p-14 md:flex-row"
+          >
+            <!-- Left item -->
+            <div class="flex flex-col space-y-12">
+              <h1
+                class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+              >
+                Sharing hope for every story.
+              </h1>
+              <p
+                class="max-w-sm text-center font-medium text-blueGreyDark md:text-left"
+              >
+                The mission of Women's Hope Medical Clinic (WHMC) is twofold.
+                First, we are a Christian ministry dedicated to meeting the
+                physical, emotional and spiritual needs of those facing
+                unplanned pregnancy. Second, we actively promote the sanctity of
+                human life and the benefits of healthy relationships and sexual
+                risk avoidance.
+              </p>
+              <div class="flex justify-center md:justify-start">
+                <a
+                  href=""
+                  class="p-3 px-6 pt-2 text-blueGreyWhite font-semibold bg-darkBlue rounded-full baseline hover:bg-midBlue"
+                  >More Info</a
+                >
+              </div>
+            </div>
+            <!-- image -->
+            <!--<div>
+             <img
+              src="img/baby-bw-square.svg"
+              alt="baby smiling"
+              class="rounded-full max-w-lg"
+            /> 
+          </div>-->
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

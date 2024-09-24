@@ -19,31 +19,92 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="flex items-center justify-between px-4 py-3 bg-blueGreyDark">
-      <div>
-        <img
-          class="h-14"
-          src="img/whmc_ha_combined_logo_900x225.svg"
-          alt="WHMC HA logo"
-        />
-      </div>
+    <nav class="bg-blueGreyDark">
+      <div class="flex items-center justify-between px-4 py-3">
+        <div>
+          <img
+            class="h-14"
+            src="img/whmc_ha_combined_logo_900x225.svg"
+            alt="WHMC HA logo"
+          />
+        </div>
 
-      <div>
-        <button
-          type="button"
-          class="block text-white hover:text-liteBlue focus:text-liteBlue focus:outline-none"
-        >
-          <svg
-            class="w-10 h-10 fill-current"
-            viewBox="0 0 24 24"
-            id="hamburger-menu"
+        <div>
+          <div
+            class="hidden md:flex md:flex-row md:justify-between md:align-middle gap-6 mr-10"
           >
-            <path
-              d="M5 7h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1zm0 6h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1zm0 6h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1z"
-            ></path>
-          </svg>
-        </button>
+            <a
+              href="#"
+              class="block text-white px-2 pt-2 font-semibold rounded hover:bg-blueGreyMid"
+              >About</a
+            >
+            <a
+              href="#"
+              class="block text-white px-2 pt-2 font-semibold rounded hover:bg-blueGreyMid"
+              >Connect</a
+            >
+            <a
+              href="#"
+              class="block text-white px-2 pt-2 font-semibold rounded hover:bg-blueGreyMid"
+              >Walk + 5k</a
+            >
+            <a
+              href=""
+              class="p-3 px-6 pt-2 text-blueGreyDark font-semibold bg-white rounded-full hover:bg-liteBlue"
+              >Donate</a
+            >
+          </div>
+          <button
+            type="button"
+            id="toggle-button"
+            class="block text-white hover:text-liteBlue focus:text-liteBlue focus:outline-none md:hidden"
+          >
+            <svg
+              class="w-10 h-10 fill-current"
+              viewBox="0 0 24 24"
+              id="hamburger-menu"
+            >
+              <path
+                d="M5 7h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1zm0 6h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1zm0 6h14c.6 0 1-.4 1-1s-.4-1-1-1H5c-.6 0-1 .4-1 1s.4 1 1 1z"
+              ></path>
+            </svg>
+          </button>
+        </div>
       </div>
-    </header>
+      <div
+        id="dropdown-menu"
+        class="hidden px-2 pb-4 pt-2 flex flex-col gap-6 items-center bg-opacity-50"
+      >
+        <a
+          href="#"
+          class="block text-white px-2 py-1 font-semibold rounded hover:bg-blueGreyMid"
+          >About</a
+        >
+        <a
+          href="#"
+          class="block text-white mt-1 px-2 py-1 font-semibold rounded hover:bg-blueGreyMid"
+          >Connect</a
+        >
+        <a
+          href="#"
+          class="block text-white mt-1 px-2 py-1 font-semibold rounded hover:bg-blueGreyMid"
+          >Walk + 5k</a
+        >
+        <a
+          href=""
+          class="p-3 px-6 pt-2 mx-9 my-4 text-blueGreyDark font-semibold bg-white rounded-full baseline hover:bg-liteBlue"
+          >Donate</a
+        >
+      </div>
+    </nav>
+    <script>
+      // try following this instead --> https://codepen.io/devdojo/pen/NWyPrGe & https://youtu.be/RI9sG74RSq8?si=5gZK3H8f5R8rc4UG
+      const toggleBtn = document.querySelector("#toggle-button");
+      const dropdown = document.querySelector("#dropdown-menu");
+
+      toggleBtn.addEventListener("click", () => {
+        dropdown.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
